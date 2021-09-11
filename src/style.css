@@ -2,19 +2,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.weather-app {
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: 30px auto;
-  max-width: 600px;
-  padding: 20px;
-}
-
 h1 {
   color: rgb(114, 114, 114);
   font-size: 55px;
   font-weight: 600;
   line-break: 28px;
+  margin-bottom: 0;
 }
 
 ul {
@@ -30,4 +23,37 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.weather-app {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.weather-app-wrapper {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature strong {
+  color: rgb(114, 114, 114);
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.weather-temperature .units {
+  font-size: 16px;
+  position: relative;
+  top: -34px;
 }
