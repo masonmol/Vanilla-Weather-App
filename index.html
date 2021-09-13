@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
     <link
@@ -27,6 +29,11 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <div class="row align-items-start">
+            <div class="col-6 date">Sunday, September 12, 2021</div>
+            <div class="col-6 time">6:59pm</div>
+          </div>
+
           <form class="search-form">
             <div class="row">
               <div class="col-9">
@@ -45,14 +52,9 @@
           </form>
           <div class="overview">
             <h1 class="city"></h1>
-            <ul>
-              <li class="date"></li>
-              <li class="time"></li>
-              <li class="conditions"></li>
-            </ul>
           </div>
-          <div class="row">
-            <div class="col-6">
+          <div class="row align-items-start">
+            <div class="col-5">
               <div class="clearfix weather-temperature">
                 <img src="" alt="clear" id="icon" class="float-left" />
                 <strong class="temperature">12</strong>
@@ -62,8 +64,16 @@
                 >
               </div>
             </div>
-
-            <div class="col 6">
+            <div class="col 4">
+              <ul>
+                <li class="conditions">Clear Sky</li>
+                <li>
+                  Hi/Lo: <span class="temp-high">73</span>°/
+                  <span class="temp-low">68</span>°
+                </li>
+              </ul>
+            </div>
+            <div class="col 3">
               <ul>
                 <li>Humidity: <span class="humidity">73</span>%</li>
                 <li>Wind: <span class="wind">2</span> km/h</li>
