@@ -1,5 +1,10 @@
 body {
   font-family: "Raleway", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(226, 240, 254) 0%,
+    rgb(255, 247, 228) 90%
+  );
 }
 
 h1 {
@@ -31,6 +36,11 @@ li:first-letter {
 
 .time {
   text-align: right;
+  color: rgb(114, 114, 114);
+}
+
+.date {
+  color: rgb(114, 114, 114);
 }
 
 .row {
@@ -40,8 +50,10 @@ li:first-letter {
 }
 
 .weather-app {
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid rgb(138, 138, 138);
   border-radius: 5px;
+  border-width: 2px;
   padding: 20px;
 }
 
@@ -99,4 +111,28 @@ li:first-letter {
 
 .forecast-temp-min {
   opacity: 0.7;
+}
+
+.btn {
+  background-color: rgb(178, 210, 247);
+  border-color: rgb(178, 210, 247);
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(110, 127, 145);
+  border-color: rgb(110, 127, 145);
+  color: white;
+}
+
+.fa {
+  color: rgb(221, 115, 66);
+  font-size: 22px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.fa:hover {
+  color: rgb(243, 152, 109);
+  cursor: pointer;
 }

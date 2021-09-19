@@ -163,4 +163,19 @@ function handleSubmit(event) {
 let form = document.querySelector(".search-form");
 form.addEventListener("submit", handleSubmit);
 
+function searchLocation(position) {
+  let apiKey = "eda5f4c1faef5ba99e914999cfcb1292";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+let currentLocationButton = document.querySelector(".fa-location-arrow");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
 search("New York");
