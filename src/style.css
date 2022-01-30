@@ -2,8 +2,8 @@ body {
   font-family: "Raleway", sans-serif;
   background: radial-gradient(
     circle at 10% 20%,
-    rgb(226, 240, 254) 0%,
-    rgb(255, 247, 228) 90%
+    rgb(255, 246, 236) 50%,
+    rgba(100, 46, 122, 0.23) 100.2%
   );
 }
 
@@ -12,7 +12,7 @@ h1 {
   font-size: 55px;
   font-weight: 600;
   line-break: 28px;
-  margin-bottom: 0;
+  margin: 0px;
 }
 
 ul {
@@ -32,6 +32,10 @@ li {
 
 li:first-letter {
   text-transform: capitalize;
+}
+
+.container {
+  margin-top: 30px;
 }
 
 .time {
@@ -114,14 +118,14 @@ li:first-letter {
 }
 
 .btn {
-  background-color: rgb(160, 201, 247);
-  border-color: rgb(178, 210, 247);
+  background-color: rgb(107, 99, 116);
+  border-color: rgb(132, 122, 143);
   color: white;
   font-family: "Raleway", sans-serif;
 }
 
 .btn:hover {
-  background-color: rgb(110, 127, 145);
+  background-color: rgb(178, 167, 190);
   border-color: rgb(110, 127, 145);
   color: white;
 }
@@ -140,5 +144,7 @@ li:first-letter {
 }
 
 .footer {
-  font-size: 13px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
 }
